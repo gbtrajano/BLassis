@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>BL Assis | Serviços Elétricos</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+    <body class="font-sans text-slate-800">
+        <!-- WhatsApp Flutuante -->
+        <a
+            href="https://wa.me/5521999999999?text=Olá,%20gostaria%20de%20um%20orçamento"
+            target="_blank"
+            class="fixed bottom-4 right-4 px-4 py-2 rounded-full flex items-center gap-2 hover:scale-110 duration-300 z-50 hover:opacity-90"
+        >
+            <img src="whatsapp.svg" alt="WhatsApp" class="w-10 h-10 md:w-12 md:h-12">
+        </a>
+
+        <!-- Header -->
+        <header class="bg-white shadow sticky top-0 z-40">
+            <div
+                class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3"
+            >
+                <!-- Logo -->
+                <div class="flex items-center gap-2">
+                    <div
+                        class="bg-teal-600 text-white font-bold px-3 py-2 rounded-lg"
+                    >
+                        BL
+                    </div>
+                    <div>
+                        <p class="font-bold">BL Assis</p>
+                        <p class="text-sm text-slate-500">Serviços Elétricos</p>
+                    </div>
+                </div>
+                <!-- Menu Desktop -->
+                <nav class="hidden md:flex gap-4 items-center">
+                    <a href="#servicos" class="hover:text-teal-600">Serviços</a>
+                    <a href="#sobre" class="hover:text-teal-600">Sobre</a>
+                    <a href="#provas" class="hover:text-teal-600">Qualidade</a>
+                    <a href="#faq" class="hover:text-teal-600">Dúvidas</a>
+                    <a
+                        href="#contato"
+                        class="bg-teal-600 text-white px-4 py-2 rounded-lg hover:bg-teal-700"
+                        >Orçamento</a
+                    >
+                </nav>
+                <!-- Botão Mobile -->
+                <button id="menuBtn" class="md:hidden p-2 border rounded-lg">
+                    ☰
+                </button>
+            </div>
+            <!-- Menu Mobile -->
+            <nav
+                id="mobileMenu"
+                class="hidden flex flex-col gap-4 px-4 py-4 md:hidden bg-white border-t"
+            >
+                <a href="#servicos" class="hover:text-teal-600">Serviços</a>
+                <a href="#sobre" class="hover:text-teal-600">Sobre</a>
+                <a href="#provas" class="hover:text-teal-600">Qualidade</a>
+                <a href="#faq" class="hover:text-teal-600">Dúvidas</a>
+                <a
+                    href="#contato"
+                    class="bg-teal-600 text-white px-4 py-2 rounded-lg hover:bg-teal-700"
+                    >Orçamento</a
+                >
+            </nav>
+        </header>
+
+        <!-- Hero -->
+        <section class="bg-slate-900 text-white">
+            <div
+                class="max-w-7xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-8 items-center"
+            >
+                <!-- Texto -->
+                <div>
+                    <span
+                        class="inline-block bg-white/10 border border-white/20 px-3 py-1 rounded-full text-sm"
+                        >⚡ Profissionais certificados • Atendimento
+                        rápido</span
+                    >
+                    <h1 class="text-3xl md:text-4xl font-bold mt-4">
+                        Serviços elétricos completos para sua casa ou empresa
+                    </h1>
+                    <p class="mt-3 text-slate-300">
+                        Instalações novas, reformas, quadros elétricos,
+                        cabeamento estruturado, SPDA e manutenção com total
+                        segurança, normas atualizadas e garantia.
+                    </p>
+                    <div class="flex flex-wrap gap-3 mt-5">
+                        <a
+                            href="#contato"
+                            class="bg-yellow-400 text-slate-900 px-4 py-2 rounded-lg font-semibold hover:bg-yellow-500"
+                            >Pedir orçamento</a
+                        >
+                        <a
+                            href="#servicos"
+                            class="bg-white/10 border border-white/20 px-4 py-2 rounded-lg hover:bg-white/20"
+                            >Ver serviços</a
+                        >
+                    </div>
+                    <div
+                        class="flex flex-wrap gap-2 mt-4 text-slate-200 text-sm"
+                    >
+                        <span class="bg-white/10 px-3 py-1 rounded-full"
+                            >NBR 5410 e 14039</span
+                        >
+                        <span class="bg-white/10 px-3 py-1 rounded-full"
+                            >Laudos e ART</span
+                        >
+                        <span class="bg-white/10 px-3 py-1 rounded-full"
+                            >Residencial • Comercial • Industrial</span
+                        >
+                    </div>
+                </div>
+                <!-- Cards -->
+                <div class="bg-slate-800 p-4 rounded-lg grid grid-cols-2 gap-4">
+                    <div class="bg-slate-700 p-3 rounded-lg gap-4 flex flex-col">
+                        <h4 class="text-[16px] md:text-xl font-semibold">Instalação de quadros</h4>
+                        <p class="text-[8px] md:text-sm text-slate-300">
+                            Projeto e Balanceamento
+                        </p>
+                    </div>
+                    <div class="bg-slate-700 p-3 rounded-lg gap-4 flex flex-col">
+                        <h4 class="text-[16px] md:text-xl font-semibold">Cabeamento</h4>
+                        <p class="text-[8px] md:text-sm text-slate-300">Rede e fibra</p>
+                    </div>
+                    <div class="bg-slate-700 p-3 rounded-lg gap-4 flex flex-col">
+                        <h4 class="text-[16px] md:text-xl font-semibold">SPDA</h4>
+                        <p class="text-[8px] md:text-sm text-slate-300">
+                            Proteção contra surtos
+                        </p>
+                    </div>
+                    <div class="bg-slate-700 p-3 rounded-lg gap-4 flex flex-col">
+                        <h4 class="text-[16px] md:text-xl font-semibold">Manutenção</h4>
+                        <p class="text-[8px] md:text-sm text-slate-300">Emergências 24h</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            // Menu mobile toggle
+            document.getElementById("menuBtn").addEventListener("click", () => {
+                document
+                    .getElementById("mobileMenu")
+                    .classList.toggle("hidden");
+            });
+        </script>
+
+        <!-- Serviços -->
+        <section id="servicos" class="py-12">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="text-2xl font-bold mb-2">Serviços</h2>
+                <p class="text-slate-500 mb-6">
+                    Executamos projetos elétricos completos, adequações às
+                    normas e correções com foco em segurança, eficiência e custo
+                    total.
+                </p>
+
+                <!-- Primeira linha de serviços -->
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white border rounded-lg p-4">
+                        <h3 class="font-semibold mb-2">
+                            Instalações e reformas
+                        </h3>
+                        <ul
+                            class="list-disc list-inside text-slate-600 text-sm space-y-1"
+                        >
+                            <li>Quadros elétricos e QGBTs</li>
+                            <li>Ampliação de circuitos e DR/DPS</li>
+                            <li>Iluminação LED e automação básica</li>
+                            <li>Correção de fator de potência</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white border rounded-lg p-4">
+                        <h3 class="font-semibold mb-2">Cabeamento e rede</h3>
+                        <ul
+                            class="list-disc list-inside text-slate-600 text-sm space-y-1"
+                        >
+                            <li>Cabeamento estruturado Cat6/Cat6A</li>
+                            <li>Eletrocalhas, conduítes e shafts</li>
+                            <li>Fibra óptica e racks</li>
+                            <li>Certificação e organização</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white border rounded-lg p-4">
+                        <h3 class="font-semibold mb-2">Proteção e SPDA</h3>
+                        <ul
+                            class="list-disc list-inside text-slate-600 text-sm space-y-1"
+                        >
+                            <li>SPDA completo e aterramento</li>
+                            <li>Instalação de DPS/DR</li>
+                            <li>Laudos, ART e medições</li>
+                            <li>Ensaios de continuidade</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Segunda linha de serviços -->
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+                    <div class="bg-white border rounded-lg p-4">
+                        <h3 class="font-semibold mb-2">Manutenção</h3>
+                        <ul
+                            class="list-disc list-inside text-slate-600 text-sm space-y-1"
+                        >
+                            <li>Preventiva e corretiva</li>
+                            <li>Termografia e inspeções</li>
+                            <li>Balanceamento de fases</li>
+                            <li>Troca de disjuntores e barramentos</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white border rounded-lg p-4">
+                        <h3 class="font-semibold mb-2">
+                            Comercial e industrial
+                        </h3>
+                        <ul
+                            class="list-disc list-inside text-slate-600 text-sm space-y-1"
+                        >
+                            <li>Entrada de energia e demanda</li>
+                            <li>Motorização e painéis</li>
+                            <li>CLP e automação leve</li>
+                            <li>Iluminação de galpões</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white border rounded-lg p-4">
+                        <h3 class="font-semibold mb-2">Residencial</h3>
+                        <ul
+                            class="list-disc list-inside text-slate-600 text-sm space-y-1"
+                        >
+                            <li>Troca de fiação antiga</li>
+                            <li>Disjuntores e tomadas</li>
+                            <li>Chuveiro, forno, ar split</li>
+                            <li>Tomadas USB e iluminação decorativa</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- KPIs -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
+                    <div class="bg-slate-50 border rounded-lg p-4 text-center">
+                        <strong class="text-xl">+500</strong>
+                        <div class="text-sm text-slate-600">
+                            obras atendidas
+                        </div>
+                    </div>
+                    <div class="bg-slate-50 border rounded-lg p-4 text-center">
+                        <strong class="text-xl">24h</strong>
+                        <div class="text-sm text-slate-600">emergências</div>
+                    </div>
+                    <div class="bg-slate-50 border rounded-lg p-4 text-center">
+                        <strong class="text-xl">100%</strong>
+                        <div class="text-sm text-slate-600">
+                            garantia de serviço
+                        </div>
+                    </div>
+                    <div class="bg-slate-50 border rounded-lg p-4 text-center">
+                        <strong class="text-xl">NBR</strong>
+                        <div class="text-sm text-slate-600">5410 • 14039</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Sobre -->
+        <section id="sobre" class="py-12 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="text-2xl font-bold mb-4">Sobre a BL Assis</h2>
+                <p class="text-slate-600">
+                    Atuamos em Belford Roxo, Baixada Fluminense e Rio de
+                    Janeiro, com equipe qualificada, EPIs, ART quando necessário
+                    e respeito às normas. Nosso compromisso é entregar segurança
+                    elétrica, eficiência energética e acabamento caprichado.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-6 mt-8">
+                    <!-- Diferenciais -->
+                    <div class="bg-white border rounded-lg p-6">
+                        <h3 class="font-semibold mb-4">Diferenciais</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="bg-slate-100 border px-3 py-1 rounded-full text-sm"
+                                >Diagnóstico claro</span
+                            >
+                            <span
+                                class="bg-slate-100 border px-3 py-1 rounded-full text-sm"
+                                >Orçamento sem surpresa</span
+                            >
+                            <span
+                                class="bg-slate-100 border px-3 py-1 rounded-full text-sm"
+                                >Prazo e limpeza</span
+                            >
+                            <span
+                                class="bg-slate-100 border px-3 py-1 rounded-full text-sm"
+                                >Peças originais</span
+                            >
+                            <span
+                                class="bg-slate-100 border px-3 py-1 rounded-full text-sm"
+                                >Garantia escrita</span
+                            >
+                        </div>
+                    </div>
+
+                    <!-- Como trabalhamos -->
+                    <div class="bg-white border rounded-lg p-6">
+                        <h3 class="font-semibold mb-4">Como trabalhamos</h3>
+                        <ol
+                            class="list-decimal list-inside text-slate-600 space-y-1"
+                        >
+                            <li>Visita técnica e medições</li>
+                            <li>Proposta e cronograma</li>
+                            <li>Execução segura e sinalizada</li>
+                            <li>Testes, laudos e entrega</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Qualidade e Depoimentos -->
+        <section id="provas" class="py-12">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="text-2xl font-bold mb-6">Qualidade e depoimentos</h2>
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-white border rounded-lg p-4">
+                        <p class="text-slate-700">
+                            “Trocaram todo meu quadro e organizaram a fiação.
+                            Acabou o desarme do disjuntor. Serviço limpo e
+                            rápido.”
+                        </p>
+                        <small class="text-slate-500"
+                            >— Carla S., Nova Aurora</small
+                        >
+                    </div>
+                    <div class="bg-white border rounded-lg p-4">
+                        <p class="text-slate-700">
+                            “Cabeamento do escritório ficou impecável. Passaram
+                            certificação e deixaram tudo identificado.”
+                        </p>
+                        <small class="text-slate-500"
+                            >— Diego R., Centro de Belford Roxo</small
+                        >
+                    </div>
+                    <div class="bg-white border rounded-lg p-4">
+                        <p class="text-slate-700">
+                            “Emergência à noite resolvida em 1 hora.
+                            Profissionais atenciosos e preparados.”
+                        </p>
+                        <small class="text-slate-500"
+                            >— Márcio L., São Bernardo</small
+                        >
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="py-12 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4">
+                <h2 class="text-2xl font-bold mb-6">Dúvidas frequentes</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <details class="bg-white border rounded-lg p-4">
+                        <summary class="font-semibold cursor-pointer">
+                            Vocês atendem emergência 24h?
+                        </summary>
+                        <p class="mt-2 text-slate-600">
+                            Sim. Em casos de curto, cheiro de queimado, queda de
+                            fase ou disjuntor desarmando, priorizamos o
+                            atendimento.
+                        </p>
+                    </details>
+                    <details class="bg-white border rounded-lg p-4">
+                        <summary class="font-semibold cursor-pointer">
+                            Emitimos ART e laudos?
+                        </summary>
+                        <p class="mt-2 text-slate-600">
+                            Quando aplicável, emitimos ART, relatórios de
+                            conformidade e ensaios conforme normas.
+                        </p>
+                    </details>
+                    <details class="bg-white border rounded-lg p-4">
+                        <summary class="font-semibold cursor-pointer">
+                            Formas de pagamento
+                        </summary>
+                        <p class="mt-2 text-slate-600">
+                            Pix, cartão e faturamento para PJ mediante cadastro.
+                        </p>
+                    </details>
+                    <details class="bg-white border rounded-lg p-4">
+                        <summary class="font-semibold cursor-pointer">
+                            Atendem quais regiões?
+                        </summary>
+                        <p class="mt-2 text-slate-600">
+                            Belford Roxo, Baixada Fluminense e cidade do Rio de
+                            Janeiro. Consulte disponibilidade para outras áreas.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </section>
+        <!-- Contato -->
+        <section id="contato" class="bg-slate-50 py-12">
+          <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-4">Peça seu orçamento</h2>
+            <p class="text-slate-600 mb-8">
+              Descreva o serviço e, se puder, anexe fotos/plantas quando enviar por WhatsApp. Retornamos rapidamente.
+            </p>
+
+            <div class="grid md:grid-cols-2 gap-6">
+              <!-- Formulário -->
+              <div class="bg-white border rounded-lg p-6 shadow">
+                <form onsubmit="return sendWhatsApp(event)" class="space-y-4">
+                  <div>
+                    <label class="block text-sm font-medium mb-1">Nome</label>
+                    <input type="text" id="nome" placeholder="Seu nome" required
+                           class="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-teal-500"/>
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium mb-1">Telefone</label>
+                    <input type="tel" id="tel" placeholder="(21) 9 9999-9999" required
+                           class="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-teal-500"/>
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium mb-1">Tipo de serviço</label>
+                    <select id="tipo" class="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-teal-500">
+                      <option>Instalação/Quadro</option>
+                      <option>Cabeamento/Infra</option>
+                      <option>SPDA/Aterramento</option>
+                      <option>Manutenção</option>
+                      <option>Outros</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label class="block text-sm font-medium mb-1">Descrição</label>
+                    <textarea id="desc" rows="4" placeholder="Conte o que precisa, local, prazo, etc." required
+                              class="w-full border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-teal-500"></textarea>
+                  </div>
+                  <button type="submit"
+                          class="bg-teal-600 text-white px-4 py-2 rounded-lg hover:bg-teal-700 font-semibold">
+                    Enviar pelo WhatsApp
+                  </button>
+                  <p class="text-sm text-slate-500">Ou ligue: (21) 97941-2969 • Segunda a sábado, 8h–18h</p>
+                </form>
+              </div>
+
+              <!-- Informações -->
+              <div class="bg-white border rounded-lg p-6 shadow">
+                <h3 class="font-semibold mb-4">Informações</h3>
+                <ul class="space-y-2 text-slate-600 text-sm">
+                  <li><strong>Telefone:</strong> (21) 97941-2969</li>
+                  <li><strong>E-mail:</strong> contato@blassis.com.br</li>
+                  <li><strong>Regiões:</strong> Nova Iguaçu, Baixada e RJ</li>
+                  <li><strong>Horário:</strong> Seg–Sáb, 8h–18h • Emergência 24h</li>
+                  <li><strong>Redes:</strong> @blassis.eletrica</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Rodapé -->
+        <footer class="bg-slate-900 text-slate-300 py-6 mt-8">
+          <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-2">
+              <div class="bg-teal-600 text-white font-bold px-3 py-2 rounded-lg">BL</div>
+              <div>
+                <strong>BL Assis</strong><br>
+                <small>CREA/CR Responsável • CNPJ 44.784.260/0001-70</small>
+              </div>
+            </div>
+            <div class="text-sm">
+              © <span id="year"></span> BL Assis. Todos os direitos reservados.
+            </div>
+          </div>
+        </footer>
+
+        <script>
+          document.getElementById('year').textContent = new Date().getFullYear();
+
+          function sendWhatsApp(e) {
+            e.preventDefault();
+            const nome = document.getElementById('nome').value.trim();
+            const tel = document.getElementById('tel').value.trim();
+            const tipo = document.getElementById('tipo').value;
+            const desc = document.getElementById('desc').value.trim();
+            const msg = `Olá, sou ${nome}. Telefone: ${tel}. Serviço: ${tipo}. Detalhes: ${desc}`;
+            const phone = "5521999999999"; // Substitua pelo seu número com DDI 55
+            const url = `https://wa.me/${phone}?text=${encodeURIComponent(msg)}`;
+            window.open(url, '_blank');
+            return false;
+          }
+        </script>
+
+        </body>
+        </html>
+
+    </body>
+</html>
